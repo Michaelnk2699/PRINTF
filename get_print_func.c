@@ -11,7 +11,9 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 {
 	print_type printer[] = {
 		{"c", print_char}, {"s", print_str},
-		/*{"i", print_int}, {"d", print_int},*/
+		{"i", print_int}, {"d", print_int},
+		{"x", print_hex}, {"X", print_upx},
+		{"o", print_oct}, {"u", print_unt},
 		{NULL, NULL}
 
 	};
