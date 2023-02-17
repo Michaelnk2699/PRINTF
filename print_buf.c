@@ -1,13 +1,12 @@
-#include"main.h"
+#include "holberton.h"
 
 /**
- * print_buf - prints a string specified by a buffer
- * @str: buffer input
- * @buff: buffer number
- * Return: the printed string
+ * print_buf - prints buffer
+ * @buf: buffer pointer
+ * @nbuf: number of bytes to print
+ * Return: number of bytes printed.
  */
-
-int print_buf(char *str, int buff)
+int print_buf(char *buf, unsigned int nbuf)
 {
-	return (write(1, str, buff));
+	return (write(1, buf, nbuf));
 }
